@@ -1,0 +1,6 @@
+Test Case ID,Feature,Test Description,Preconditions,Test Steps,Expected Result,Actual Result,Status,Priority,Tester Name,Date
+TC001,Booking,Verify successful booking,User logged in,1. Go to booking page 2. Select a car 3. Choose dates 4. Click 'Book Now',Booking confirmed message is displayed,,,High,Zain,2025-02-06
+TC002,Booking,Verify booking with invalid dates,User logged in,1. Go to booking page 2. Select a car 3. Choose past dates 4. Click 'Book Now',Error message should be displayed,,,Medium,Zain,2025-02-06
+TC003,Payment,Check successful payment,User has a saved payment method,1. Book a car 2. Select 'Credit Card' 3. Click 'Pay Now',Payment successful message is displayed,,,High,Zain,2025-02-06
+TC004,Car Listings,Verify search functionality,User on home page,1. Enter car model in search 2. Click 'Search',Relevant cars should be displayed,,,Medium,Zain,2025-02-06
+TC005,Authentication,Test user login with valid credentials,User has an account,1. Enter email 2. Enter password 3. Click 'Login',User should be redirected to dashboard,,,High,Zain,2025-02-06
