@@ -99,8 +99,7 @@ try{
 
         </div>
       )}
-     {isOrderCreated && <p className='text-2xl font-semibold text-green-600'>Order is created in Sanity</p>}
-     {error && <p className='text-red-500'>{error}</p>}
+
 
        {cart.length === 0 ? (
 

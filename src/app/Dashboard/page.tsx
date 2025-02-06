@@ -1,5 +1,4 @@
 import Footer from "@/components/Footer/Footer";
-import Header from "@/components/header/header";
 import { client } from "@/sanity/lib/client";
 import Image from "next/image";
 
