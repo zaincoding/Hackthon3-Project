@@ -12,8 +12,16 @@ type Product = {
   image_url: string;
 };
 
+type Order = {
+  _id: string;
+  order_Date: string;
+  customer: string;
+  items: Product[];
+};
+
+
 const getOrders = async (): Promise<Product[]> => {
-  const orders = await client.fetch(`
+  const orders: Order[] = await client.fetch(`
     *[_type == "order"][0..4] {
       _id,
       order_Date,
@@ -29,8 +37,7 @@ const getOrders = async (): Promise<Product[]> => {
     }
   `);
 
-  // Flatten items from all orders
-  return orders?.flatMap((order: any) => order.items) || [];
+  return orders?.flatMap((order) => order.items) || [];
 };
 
 export default async function DashBoard() {

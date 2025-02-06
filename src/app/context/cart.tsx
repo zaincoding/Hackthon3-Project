@@ -12,8 +12,6 @@ export default function Cart() {
   const { cart, removeFromCart } = useCart();
   const [displayFrom, setDisplayForm] = useState(false)
   const [delay,setDelay] = useState(true);
-  const [isOrderCreated, setIsOrderCreated] = useState(false)
-  const [error, setError] = useState<string | null>(null)
 
   const [customerInfo, setCustomerInfo] = useState({
     name: '',
@@ -73,7 +71,6 @@ try{
 }
  catch(error){
   console.log("Checkout failed:", error)
-  setError("Checkout failed. Please try again.")
 }
   }
   
