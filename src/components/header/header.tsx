@@ -1,5 +1,6 @@
 import Image from 'next/image'
 // import Body from '@/components/Header/Body/Body'
+import Link from 'next/link'
 
 export default function Header(){
 
@@ -13,8 +14,12 @@ export default function Header(){
 <p className='md:ml-[1080px]  gap-5 mt-[40px] absolute hidden md:flex'>
         <Image src='/images/icons/heart.PNG' alt='#' width={25} height={25} />
         <Image src='/images/icons/bell.PNG' alt='#' width={30} height={30} />
+        <Link href="./Dashboard">
         <Image src='/images/icons/setting.PNG' alt='#' width={25} height={25} />
+        </Link>
+        <Link href="./Details">
         <Image src='/images/icons/profile.PNG' alt='#' width={35} height={35} />
+        </Link>
     </p>
 
 
